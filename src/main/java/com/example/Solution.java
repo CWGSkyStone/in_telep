@@ -1,3 +1,13 @@
+/*
+* File: Solution.java
+* Author: Erős István
+* Copyright: 2026, Erős István
+* Group: Szoft I-N
+* Date: 2026-03-09
+* Github: https://github.com/eros12345/
+* Licenc: MIT
+*/
+
 package com.example;
 
 import java.util.ArrayList;
@@ -8,7 +18,6 @@ public class Solution {
     public static List<String> task01() {
         List<String> cityList = new ArrayList<>();
         try(Scanner sc = new Scanner(System.in)){
-
             String city;
             do {
                 System.out.print("Település: ");
@@ -16,10 +25,8 @@ public class Solution {
                 if(!city.equals("vege")) {
                     cityList.add(city);
                 }
-                
             }while(!city.equals("vege"));
-        }
-        System.out.println(cityList.size());
+        }        
         return cityList;
     }
 
