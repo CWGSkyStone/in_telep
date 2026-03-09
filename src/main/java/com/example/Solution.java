@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Solution {
-    public static void task01() {
+    public static List<String> task01() {
         List<String> cityList = new ArrayList<>();
         try(Scanner sc = new Scanner(System.in)){
 
@@ -20,6 +20,12 @@ public class Solution {
             }while(!city.equals("vege"));
         }
         System.out.println(cityList.size());
-        //TODO: Írass ki a tömb tartalmát
+        return cityList;
+    }
+
+    public static void printCities(List<String> cityList) {
+        for(String city : cityList ) {
+            System.out.printf("%15s\n", city);
+        }
     }
 }
